@@ -3,7 +3,7 @@
 # Project setup
 ########################################################################################################################
 
-init_env : init_virtualenv load_direnv precommit_install install
+init_env : init_virtualenv load_direnv install precommit_install
 	@echo "✅ Environment initialized and ready to use 🔥"
 
 init_virtualenv :
@@ -45,5 +45,5 @@ install :
 .PHONY: train
 train:
 	@echo "Training the model ..."
-	python -m titanic.train
+	python -m titanic.main
 	@echo "✅ Model trained"

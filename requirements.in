@@ -3,6 +3,8 @@ pandas
 scikit-learn
 # Cloud
 google-cloud-bigquery-storage
+google-cloud-bigquery
+google-cloud-storage
 db-dtypes
 
 # Notebook
