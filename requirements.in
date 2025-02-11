@@ -1,0 +1,12 @@
+# Data Science
+pandas
+scikit-learn
+# Cloud
+google-cloud-bigquery-storage
+db-dtypes
+
+# Notebook
+notebook
+
+# Linting and Formatting
+pre-commit
