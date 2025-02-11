@@ -1,7 +1,7 @@
 # Python
 __pycache__/
 *.py[cod]
-*titanic.egg-info/*
+src/titanic.egg-info
 # Secrets
 .env
 credentials
