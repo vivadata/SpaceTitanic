@@ -5,3 +5,7 @@ src/titanic.egg-info
 # Secrets
 .env
 credentials
+
+# Data & Models
+data/*
+models/*

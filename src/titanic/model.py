@@ -5,7 +5,7 @@ from titanic.registry import upload_model
 
 def _init_model():
     """Initialize the model"""
-    return RandomForestClassifier(n_estimators=100, random_state=42)
+    return RandomForestClassifier(n_estimators=100, max_depth=10)
 
 
 def train_model(X_train, y_train, model=None):
@@ -14,7 +14,7 @@ def train_model(X_train, y_train, model=None):
     """
     if model is None:
         model = _init_model()
-        upload_model(model, "model")
     model.fit(X_train, y_train)
+    upload_model(model, "model")
 
     return model
