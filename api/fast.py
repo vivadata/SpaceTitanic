@@ -16,7 +16,6 @@ def read_root():
 # 6145_01,Europa,,C/231/S,55 Cancri e,,False,3478.0,10.0,0.0,105.0,2383.0,Benebah Asolipery
 @app.get("/predict/")
 def predict(
-    PassengerId: str,
     HomePlanet: str,
     CryoSleep: bool,
     Cabin: str,
@@ -32,7 +31,7 @@ def predict(
 ) -> dict:
     data = pd.DataFrame(
         {
-            "PassengerId": [PassengerId],
+            "PassengerId": None,
             "HomePlanet": [HomePlanet],
             "CryoSleep": [CryoSleep],
             "Cabin": [Cabin],

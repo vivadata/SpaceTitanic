@@ -24,3 +24,21 @@ To run the pipeline you can use the following command:
 ```bash
 make train
 ```
+
+## Web application and API
+
+Launch the api in local with :
+
+```bash
+make run_api
+```
+
+You should test it by following the link that will be displayed in the terminal.
+Don't hesitate to go the `/docs` endpoint to see the documentation of the API.
+You can also test the API with the `make test_api` rule in another terminal.
+
+Finally launch the streamlit app with :
+
+```bash
+make streamlit
+```

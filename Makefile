@@ -78,6 +78,7 @@ run_docker_api:
 # Web App
 ########################################################################################################################
 
+.PHONY: streamlit
 streamlit:
 	@echo "Starting the Streamlit app ..."
 	streamlit run app/main.py

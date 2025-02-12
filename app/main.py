@@ -12,7 +12,7 @@ st.title("Space Titanic Survival Prediction")
 
 st.header("Enter Passenger Details")
 
-PassengerId = st.text_input("Passenger ID", value="6145_01")
+
 HomePlanet = st.selectbox("Home Planet", ["Earth", "Europa", "Mars"], index=1)
 CryoSleep = st.selectbox("Cryo Sleep", [True, False])
 Cabin = st.text_input("Cabin", value="C/231/S")
